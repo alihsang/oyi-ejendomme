@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Oyi Ejendomme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">Oyi Ejendomme</div>
+        <nav>
+            <a href="#om">Om os</a>
+            <a href="#ejendomme">Ejendomme</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Oyi Ejendomme</h1>
+            <p>Langsigtede investeringer i kvalitets­ejendomme.</p>
+        </div>
+    </section>
+
+    <section id="om" class="section">
+        <div class="container">
+            <h2>Om Oyi Ejendomme</h2>
+            <p>
+                Oyi Ejendomme fokuserer på stabile, langsigtede ejendomsinvesteringer
+                med fokus på beliggenhed, kvalitet og ordentlige lejeforhold.
+            </p>
+        </div>
+    </section>
+
+    <section id="ejendomme" class="section section-light">
+        <div class="container">
+            <h2>Udvalgte ejendomme</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Ejendom 1</h3>
+                    <p>Adresse, by – kort beskrivelse af ejendommen.</p>
+                </article>
+                <article class="card">
+                    <h3>Ejendom 2</h3>
+                    <p>Adresse, by – kort beskrivelse af ejendommen.</p>
+                </article>
+                <article class="card">
+                    <h3>Ejendom 3</h3>
+                    <p>Adresse, by – kort beskrivelse af ejendommen.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>
+                Har du spørgsmål eller ønsker dialog om ejendomme, er du velkommen til at kontakte os.
+            </p>
+            <div class="contact-box">
+                <p><strong>E-mail:</strong> info@oyi-ejendomme.dk</p>
+                <p><strong>Telefon:</strong> +45 12 34 56 78</p>
+                <p><strong>Adresse:</strong> Eksempelvej 1, 8000 Aarhus C</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> Oyi Ejendomme</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
