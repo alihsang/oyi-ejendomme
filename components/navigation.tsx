@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import { ContactModal } from "./contact-modal"
 
 const navLinks = [
   { href: "#erhverv", label: "Erhverv" },
@@ -14,6 +15,7 @@ const navLinks = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isContactOpen, setIsContactOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,6 +81,7 @@ export function Navigation() {
                 </Link>
               ))}
               <motion.button
+                onClick={() => setIsContactOpen(true)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`px-6 py-2.5 text-xs font-semibold tracking-widest uppercase border transition-all duration-300 ${
@@ -134,6 +137,10 @@ export function Navigation() {
                 </motion.div>
               ))}
               <motion.button
+                onClick={() => {
+                  setIsContactOpen(true)
+                  setIsMobileMenuOpen(false)
+                }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -145,6 +152,8 @@ export function Navigation() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   )
 }
