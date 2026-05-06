@@ -47,10 +47,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 text-balance"
+            className="font-light text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6 text-balance tracking-wide"
           >
             Eksklusiv fast ejendom
-            <span className="block text-gold-light">i Danmark</span>
+            <span className="block text-gold-light font-normal">i Danmark</span>
           </motion.h1>
 
           <motion.p
