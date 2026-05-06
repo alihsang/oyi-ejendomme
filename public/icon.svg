@@ -1,26 +1,64 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {
-      .background { fill: black; }
-      .foreground { fill: white; }
+      .building { fill: #1e293b; }
+      .accent { fill: #0ea5e9; }
+      .window { fill: #0ea5e9; }
+      .roof { fill: #06b6d4; }
     }
     @media (prefers-color-scheme: dark) {
-      .background { fill: white; }
-      .foreground { fill: black; }
+      .building { fill: #e2e8f0; }
+      .accent { fill: #0284c7; }
+      .window { fill: #0284c7; }
+      .roof { fill: #0891b2; }
     }
   </style>
-  <g clip-path="url(#clip0_7960_43945)">
-    <rect class="background" width="180" height="180" rx="37" />
-    <g style="transform: scale(95%); transform-origin: center">
-      <path class="foreground"
-        d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z" />
-      <path class="foreground"
-        d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z" />
-    </g>
+  
+  <!-- Main building structure -->
+  <!-- Roof -->
+  <polygon class="roof" points="90,15 160,70 20,70" />
+  
+  <!-- Main building -->
+  <rect class="building" x="25" y="68" width="130" height="105" rx="4" />
+  
+  <!-- Left tower -->
+  <rect class="building" x="8" y="90" width="25" height="83" rx="3" />
+  
+  <!-- Right tower -->
+  <rect class="building" x="147" y="90" width="25" height="83" rx="3" />
+  
+  <!-- Windows - Main building -->
+  <g class="window">
+    <rect x="35" y="82" width="14" height="14" rx="2" />
+    <rect x="55" y="82" width="14" height="14" rx="2" />
+    <rect x="75" y="82" width="14" height="14" rx="2" />
+    <rect x="95" y="82" width="14" height="14" rx="2" />
+    <rect x="115" y="82" width="14" height="14" rx="2" />
+    
+    <rect x="35" y="105" width="14" height="14" rx="2" />
+    <rect x="55" y="105" width="14" height="14" rx="2" />
+    <rect x="75" y="105" width="14" height="14" rx="2" />
+    <rect x="95" y="105" width="14" height="14" rx="2" />
+    <rect x="115" y="105" width="14" height="14" rx="2" />
+    
+    <rect x="35" y="128" width="14" height="14" rx="2" />
+    <rect x="55" y="128" width="14" height="14" rx="2" />
+    <rect x="75" y="128" width="14" height="14" rx="2" />
+    <rect x="95" y="128" width="14" height="14" rx="2" />
+    <rect x="115" y="128" width="14" height="14" rx="2" />
   </g>
-  <defs>
-    <clipPath id="clip0_7960_43945">
-      <rect width="180" height="180" fill="white" />
-    </clipPath>
-  </defs>
+  
+  <!-- Windows - Left tower -->
+  <rect class="window" x="13" y="102" width="11" height="11" rx="1.5" />
+  <rect class="window" x="13" y="125" width="11" height="11" rx="1.5" />
+  <rect class="window" x="13" y="148" width="11" height="11" rx="1.5" />
+  
+  <!-- Windows - Right tower -->
+  <rect class="window" x="154" y="102" width="11" height="11" rx="1.5" />
+  <rect class="window" x="154" y="125" width="11" height="11" rx="1.5" />
+  <rect class="window" x="154" y="148" width="11" height="11" rx="1.5" />
+  
+  <!-- Door -->
+  <rect class="accent" x="80" y="145" width="20" height="28" rx="3" />
+  <circle class="building" cx="90" cy="161" r="2" />
 </svg>
