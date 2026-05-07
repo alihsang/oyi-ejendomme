@@ -43,15 +43,15 @@ export function Navigation() {
             <Link href="/" className="group">
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="flex items-center gap-2"
+                className="flex flex-col items-start"
               >
-                <span className={`font-serif text-2xl font-semibold tracking-wide transition-colors duration-300 ${
+                <span className={`font-serif text-4xl font-extrabold tracking-[-0.02em] transition-colors duration-300 ${
                   isScrolled ? "text-off-white" : "text-white"
                 }`}>
-                  oyi
+                  OYI
                 </span>
-                <span className={`font-serif text-2xl font-light tracking-wide transition-colors duration-300 ${
-                  isScrolled ? "text-gold" : "text-gold-light"
+                <span className={`font-sans text-xs uppercase tracking-[0.55em] font-semibold mt-1 transition-colors duration-300 ${
+                  isScrolled ? "text-gold/80" : "text-gold-light"
                 }`}>
                   ejendomme
                 </span>
